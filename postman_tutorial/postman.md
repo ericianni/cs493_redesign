@@ -220,11 +220,15 @@ For more examples about how to create Postman tests, please visit https://learni
 
 To practice writing tests let's add one to the request you created above. Under the _Tests_ tab add code to test to see if the request returns a 200 Status Code.  This will require you to use `pm.expect()` and `pm.response` as well as the _Chai Assertion Library_ syntax. Please try your hand at creating the request before viewing the solution.
 
-<details><summary>Click for solution</summary>
-```javascript
-pm.test("Status Code is 200", function() {
-	pm.expect(pm.response.to.have.status(200)) ;
-});
-```
+<details>
+	<summary>Click for solution</summary>
+
+	```javascript
+		pm.test("Status Code is 200", function() {
+			pm.expect(pm.response.to.have.status(200)) ;
+		});
+	```
 </details>
+
+
 
