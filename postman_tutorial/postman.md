@@ -22,11 +22,11 @@ Only once you have proven that the simple stuff works you can then "safely" use 
    
 #### Status codes can lie
 
-When testing an API you cannot simply rely on status codes. To do so would go against the _assume nothing_ mantra. While it may seem like extra work to test more than status codes it is important to remember the goal of this course. You will eventually be creating your own API with status code resposnes that you yourself write. The only way to verify you wrote the code correctly is to test it, so get in the habit now.
+When testing an API you cannot simply rely on status codes. To do so would go against the _assume nothing_ mantra. While it may seem like extra work to test more than status codes it is important to remember the goal of this course. You will eventually be creating your own API with status code responses that you yourself write. The only way to verify you wrote the code correctly is to test it, so get in the habit now.
    
 #### Check before and after
 
-Just as it is not enough to test just the status codes, it is also not enough to simply test the response body. Everying could appear correct with the response, but in fact no changes have been made to the data. Therefore if you want to test to see if the number of records increases by 1 with each create request you will need to know the number of records **before** _and_ **after**.
+Just as it is not enough to test just the status codes, it is also not enough to simply test the response body. Everything could appear correct with the response, but in fact no changes have been made to the data. Therefore if you want to test to see if the number of records increases by 1 with each create request you will need to know the number of records **before** _and_ **after**.
    
 #### Clean up after yourself
 
@@ -38,7 +38,7 @@ Once you have created a _collection_ in Postman you will need to start adding **
 
 #### Type
 
-This is where you specifiy the kind of request you will be sending. The most common types of requests are:
+This is where you specifically the kind of request you will be sending. The most common types of requests are:
 
 * **GET**
 * **POST**
@@ -70,7 +70,7 @@ This is where you will place the _payload_ for your POST requests. When interact
 
 #### Pre-request Script
 
-When crafting a testing suite with Postman pre-request scripts will allow you to set up any enviromnental variables that will be required for your tests. This can even include initiating separate requests before the main request. This is useful for determining the state of the data before the main request so you can compare it to the response. These scripts are implemented using vanilla JavaScript and the Postman framework.
+When crafting a testing suite with Postman pre-request scripts will allow you to set up any environmental variables that will be required for your tests. This can even include initiating separate requests before the main request. This is useful for determining the state of the data before the main request so you can compare it to the response. These scripts are implemented using vanilla JavaScript and the Postman framework.
 
 #### Tests
 
