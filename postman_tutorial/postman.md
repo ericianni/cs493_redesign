@@ -16,7 +16,7 @@ When testing an API it is best to approach developing a testing suite without an
 
 As mentioned above, you must begin by testing the most basic functionalities of an API. This means having tests to verify simple GET and POST statements work before you move onto more complex API functionality.
    
-#### Build off off proven test
+#### Build off of proven test
 
 Only once you have proven that the simple stuff works you can then "safely" use that same functionality in later tests. For example, after verifying that a GET request for a record works, you can then use that same GET request when testing to see if an UPDATE request was successful.
    
